@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="#" class="nav-link active">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="about-me-card">
+            <div class="about-me-left">
+                <img src="photos/personal-photo-cropped.jpg" class="about-me-image">
+            </div>
+            <div class="about-me-right">
+                <h1>Mahmoud Alrimawi</h1>
+                <h2 id="faded">Back-End Web Developer</h2>
+                <p>My expertise lies in working on web and mobile app development on the cloud. Being in Riyadh, Saudi Arabia, I am fluent in both Arabic and English. Digitization projects are my favorite.</p>
+                <div class="button-group">
+                    <a href="documents/Mahmoud-Alrimawi-Resume-2026.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahmoud-alrimawi-519516246/" class="btn btn-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>    
+                    <a href="https://github.com/M-Alrimawi" class="btn btn-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="toggle-bar">
+            <button class="toggle-option active">Experience</button>
+            <button class="toggle-option">Education</button>
+        </div>
+
+        <div id="experience-content" class="content-section active">
+            <div class="experience-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <h3 class="position-title">Freelance Mobile Application Developer</h3>
+                    <p class="company-name">King Hussein Medical Center</p>
+                    <p class="date-location">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</span>
+                        <span class="date"><i class="far fa-calendar-alt"></i> Mar 2025 – Jul 2025</span>
+                    </p>
+                    <p class="description">The task I received was to write a mobile application that stores dermatology medical resources and notifies its users of events or lectures. The application was written in flutter and hosted on AWS. Events are created and announced using a simple email ticketing system.</p>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <h3 class="position-title">Back-End Web Developer Intern</h3>
+                    <p class="company-name">Obeikan Digital Solutions</p>
+                    <p class="date-location">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</span>
+                        <span class="date"><i class="far fa-calendar-alt"></i> Jun 2023 – Sep 2023</span>
+                    </p>
+                    <p class="description">Development and deployment of a Facial Recognition service using OpenCV's dlib. The goal was to allow a user to use facial recognition to sign in to work. This service was written using python's FastAPI and hosted on Google Cloud.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="education-content" class="content-section">
+            <div class="experience-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <h3 class="position-title">B.Sc. Software Engineering</h3>
+                    <p class="company-name">King Fahd University of Petroleum and Minerals</p>
+                    <p class="date-location">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Dhahran, Saudi Arabia</span>
+                        <span class="date"><i class="far fa-calendar-alt"></i> 2019-2024</span>
+                    </p>
+                    <p class="description">Concentration in Computer Networks. Graduated with second honors and a GPA of 3.742/4</p>
+                    
+                    <div class="education-buttons">
+                        <a href="documents/KFUPM_Certificate.pdf" target="_blank" class="btn-education">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                        <a href="documents/KFUPM_Transcript.pdf" target="_blank" class="btn-education">
+                            <i class="fas fa-file-alt"></i> View Transcript
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+
+            <div class="skills-left">
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-golang"></i> Go</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Tools & DevOps</h3>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                        <li><i class="fab fa-github"></i> GitHub CI/CD</li>
+                        <li><i class="fab fa-linux"></i> Linux</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-right">
+                <div class="skills-category">
+                    <h3>Cloud</h3>
+                    <div class="certification-wrapper">
+                        <img src="photos/aws-certified-developer-associate.png" alt="AWS Developer Associate" class="certification-badge">
+                        <div class="certification-content">
+                            <p class="certification-name">AWS Certified Developer – Associate</p>
+                            <p class="certification-date"><i class="far fa-calendar-alt"></i> Earned: March 2025</p>
+                            <p class="certification-description">Earners of this certification are able to develop, deploy, and debug cloud-based applications that follow AWS best practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="timeline-dot"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Golang Web Scraper</h3>
+                    <p class="project-description">I wrote a web scraper in Golang that transforms the Cisco Partner Locator website into a downloadable excel spreadsheet.</p>
+                    <div class="project-tags">
+                        <span class="tag">Go</span>
+                        <span class="tag">Web Scraping</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="timeline-dot"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Network Transparent Application Gateway for Telnet</h3>
+                    <p class="project-description">This is an exploratory research done under the supervision of Dr Waleed Al-Gobi at KFUPM. The goal of the project was to determine if software defined networks can be used to enhance the security of otherwise insecure systems. I utilize OpenFlow switches and a Ryu controller to centralize the management of the user credentials and permissions without any alterations to the Telnet clients.</p>
+                    <div class="project-tags">
+                        <span class="tag">SDN</span>
+                        <span class="tag">OpenFlow</span>
+                        <span class="tag">Ryu</span>
+                        <span class="tag">Telnet</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/M-Alrimawi/Telnet-Application-Gateway" target="_blank" class="btn-project">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="timeline-dot"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Smart Menu</h3>
+                    <p class="project-description">This project uses an AI to create personalized restaurant orders and deals based on the user's order history and the restaurant's order data. The front-end is built with React and Tailwind. The back-end is written in Python and utilizes the ScikitLearn library for AI training.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        
+        <div class="contact-container">
+            <a href="mailto:mahmoudbrimawi@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-details">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">mahmoudbrimawi@gmail.com</span>
+                </div>
+            </a>
+            
+            <a href="tel:+966598123470" class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="contact-details">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+966 59 812 3470</span>
+                </div>
+            </a>
+            
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-details">
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Riyadh, Saudi Arabia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
